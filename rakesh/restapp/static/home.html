@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Irani Restaurant</title>
+  <style>
+    :root {
+      --dark-brown: #4e342e;
+      --medium-brown: #795548;
+      --sandal: #f1e1c1;
+      --text-light: #fff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--sandal);
+      color: var(--dark-brown);
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--dark-brown);
+      padding: 15px 30px;
+      color: var(--text-light);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-links li a:hover {
+      color: var(--sandal);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: var(--medium-brown);
+      color: var(--text-light);
+    }
+
+    .hero h1 { font-size: 3rem; }
+    .hero p { margin-top: 20px; font-size: 1.2rem; }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--sandal);
+      color: var(--dark-brown);
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: var(--dark-brown);
+      color: whitea;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Irani Restaurant</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Irani Restaurant</h1>
+    <p>Experience authentic Irani cuisine made with love and tradition.</p>
+    <button onclick="window.location.href='menu.html'">View Menu</button>
+  </section>
+</body>
+</html>

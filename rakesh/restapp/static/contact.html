@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Irani Restaurant</title>
+  <style>
+    :root {
+      --dark-brown: #4e342e;
+      --medium-brown: #795548;
+      --sandal: #f1e1c1;
+      --text-light: #fff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--sandal);
+      color: var(--dark-brown);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--dark-brown);
+      padding: 15px 30px;
+      color: var(--text-light);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-links li a:hover {
+      color: var(--sandal);
+    }
+
+    .contact-section {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      margin-bottom: 20px;
+      color: var(--medium-brown);
+    }
+
+    .contact-section p {
+      margin-bottom: 15px;
+    }
+
+    .contact-section strong {
+      color: var(--dark-brown);
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .contact-section {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Irani Restaurant</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 123 Irani Lane, Hyderabad, India</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> contact@iranirestaurant.com</p>
+    <p>We’re open from <strong>12:00 PM to 11:00 PM</strong> every day.</p>
+  </div>
+
+</body>
+</html>

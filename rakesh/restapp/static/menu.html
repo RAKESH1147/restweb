@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Irani Restaurant</title>
+  <style>
+    :root {
+      --dark-brown: #4e342e;
+      --medium-brown: #795548;
+      --sandal: #f1e1c1;
+      --text-light: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--sandal);
+      color: var(--dark-brown);
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--dark-brown);
+      padding: 15px 30px;
+      color: var(--text-light);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: var(--sandal);
+    }
+
+    .menu-section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .menu-section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--medium-brown);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      margin-bottom: 15px;
+    }
+
+    .menu-item span {
+      float: right;
+      color: var(--medium-brown);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 40px 0;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .menu-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Irani Restaurant</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-section">
+    <h2>Soups</h2>
+    <div class="menu-item">Chicken Soup <span>₹120</span></div>
+    <div class="menu-item">Mutton Paya Soup <span>₹150</span></div>
+    <div class="menu-item">Veg Clear Soup <span>₹90</span></div>
+
+    <hr>
+
+    <h2>Starters</h2>
+    <div class="menu-item">Chicken Tikka <span>₹220</span></div>
+    <div class="menu-item">Mutton Seekh Kebab <span>₹250</span></div>
+    <div class="menu-item">Paneer Tikka <span>₹180</span></div>
+
+    <hr>
+
+    <h2>Mandi</h2>
+    <div class="menu-item">Chicken Mandi (Full) <span>₹450</span></div>
+    <div class="menu-item">Mutton Mandi (Full) <span>₹550</span></div>
+    <div class="menu-item">Mix Mandi (Chicken + Mutton) <span>₹600</span></div>
+
+    <hr>
+
+    <h2>Breads</h2>
+    <div class="menu-item">Tandoori Roti <span>₹25</span></div>
+    <div class="menu-item">Butter Naan <span>₹35</span></div>
+    <div class="menu-item">Rumali Roti <span>₹20</span></div>
+
+    <hr>
+
+    <h2>Desserts</h2>
+    <div class="menu-item">Double Ka Meetha <span>₹90</span></div>
+    <div class="menu-item">Khubani Ka Meetha <span>₹100</span></div>
+    <div class="menu-item">Phirni <span>₹80</span></div>
+  </div>
+
+</body>
+</html>
